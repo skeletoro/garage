@@ -15,6 +15,7 @@ garage.add(b);
 garage.add(c);
 //System.out.println(garage);
 a.accelerate();
+System.out.println("hello friend");
 	}
 
 }
