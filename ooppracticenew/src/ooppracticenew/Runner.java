@@ -15,7 +15,7 @@ public class Runner {
 		A1.addVehicle(b);
 		A1.addVehicle(c);
 
-		// A1.removeVehicle(a);
+		 A1.removeVehicle(a);
 		// A1.emptyGarage();
 		A1.printContents();
 		A1.calculateBill();

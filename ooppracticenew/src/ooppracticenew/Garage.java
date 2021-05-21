@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Garage {
-	private String address;
 	private List<Vehicle> contents = new ArrayList<>();
 
 	public void addVehicle(Vehicle v) {
 		contents.add(v);
+		System.out.println("vehicle is added");
 	}
 
 	public void printContents() {
+		System.out.println("\nvehicles present in garage \n");
 		for (Vehicle v : contents) {
 			System.out.println(v);
 		}
@@ -34,6 +35,7 @@ public class Garage {
 
 	public void removeVehicle(Vehicle a) {
 		contents.remove(a);
+		System.out.println("vehicle is removed");
 	}
 
 	public void emptyGarage() {

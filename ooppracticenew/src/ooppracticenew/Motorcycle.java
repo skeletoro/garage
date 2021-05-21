@@ -19,7 +19,7 @@ public class Motorcycle extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "[(Motorcycle Name = " + "), (Year = " + getYear() + "), (invoice amount = $" + getValue() + ")]\n";
+		return "[(Motorcycle Name = " + getName() + "), (Year = " + getYear() + "), (invoice amount = $" + getValue() + ")]\n";
 
 	}
 

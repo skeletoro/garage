@@ -3,7 +3,7 @@ package ooppracticenew;
 public abstract class Vehicle {
 
 	private int vehicleId;
-	private String name;
+	private static String name;
 	private int year;
 	public double value;
 
@@ -15,7 +15,7 @@ public abstract class Vehicle {
 
 	}
 
-	public String getName() {
+	public static String getName() {
 		return name;
 	}
 
