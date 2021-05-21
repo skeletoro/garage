@@ -8,13 +8,21 @@ public class Garage {
 
 	public void addVehicle(Vehicle v) {
 		contents.add(v);
-		System.out.println("vehicle is added");
+		System.out.println("this Vehicle" + v + " is added");
 	}
 
 	public void printContents() {
-		System.out.println("\nvehicles present in garage \n");
-		for (Vehicle v : contents) {
-			System.out.println(v);
+		
+		
+		if (contents.isEmpty()) {
+			System.out.println("sorry there are no vehicles in the garage at this time");
+			
+		} else {
+			System.out.println("\n here are the vehicles present in garage \n");
+			for (Vehicle v : contents) {
+				System.out.println(v);
+			}
+			
 		}
 	}
 
@@ -35,11 +43,12 @@ public class Garage {
 
 	public void removeVehicle(Vehicle a) {
 		contents.remove(a);
-		System.out.println("vehicle is removed");
+		System.out.println("this Vehicle: " + a + "is removed from service Garage");
 	}
 
 	public void emptyGarage() {
 		contents.clear();
+		System.out.println("all vehicles have been removed from the garage.");
 	}
 
 }
